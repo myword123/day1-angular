@@ -1,0 +1,253 @@
+canvas画布
+
+每个画布都必须要有一个context的定义,就目前来说，官方规范值承认一个2d环境
+var ctx=cvs.getContext("2d");
+
+
+画圆
+arc(圆心坐标x,圆心坐标y,圆的半径，起始角度，结束角度，true(代表的是逆时针画圆)/false代表的是顺时针画圆)
+
+
+设备像素  css像素
+物理像素  设备相素*设备像素比，也就是实际分辨率
+
+
+
+
+
+day 12 2
+mkdir 文件夹名称   创建文件夹
+shift+右键可以进入当前盘符或者文件夹
+cd +文件夹 可以进入你想进去的文件夹
+
+
+安装gulp
+npm install gulp -g 全局安装
+npm install gulp --save-dev安装依赖
+*通配符，代表所有文件
+
+
+day 12 5
+box-sizing:border-box;
+
+
+
+
+
+zepto Touch.js事件
+tap
+singleTap   单击
+doubleTap   双击
+longtap     长按
+swipe       滑动
+swipeLeft   
+swipeRight  
+swipeUp     
+swipeDown   
+
+点透事件的三种解决方式
+
+
+
+
+day 12 6
+.ellipsis
+{
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.ellipsis-2
+{
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;//超出2行出现省略号
+    -webkit-box-orient: vertical;
+}
+
+
+
+
+12 7
+swiper 中文教程
+http://www.swiper.com.cn/api/start/2014/1218/140.html
+
+
+1 swiper初始化
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">slider1</div>
+    <div class="swiper-slide">slider2</div>
+    <div class="swiper-slide">slider3</div>
+  </div>
+</div>
+<script> 
+var mySwiper = new Swiper('.swiper-container', {
+	autoplay: 5000,//可选选项，自动滑动
+})
+</script>
+
+
+
+day 12 9
+
+微信场景
+走秀网下拉加载（ iScroll插件）http://www.360doc.com/content/14/0724/11/16276861_396699901.shtml
+cnmp install iScroll
+下载插件
+
+
+
+
+12 13
+安卓的后缀名apk
+ios的后缀名 IPA
+windows phone的后缀是
+
+
+混合开发的优势，一次编译多平台使用
+
+
+
+
+
+关于混合开发的
+day 12 14
+访问：http://phonegap.com/getstarted/网站
+
+安装android 环境
+hybrid开发--混合开发（其中有个phonegap）使用的就是cordova打包
+1.任意目录下打开cmd命令
+cnmp install cordova -g  全局安装cordova
+2.检测是否安装成功
+cordova -v   查看版本检测是否安装成功，在这最好不要升级，提示的话就输入N，或者ctrl+c结束
+3.配置环境
+  jdk的安装 ，环境变量的配置
+    三个环境变量的配置
+1.JAVA_HOME:jdk路径
+2.CLASS_PATH
+3.path
+   sdk目录下配置安卓环境
+4.phonegap项目中添加android平台
+在cmd命令行中输入adb可以查看android_home路径是否错误
+cordova platform add android  
+
+不出意外1-3个小时
+
+cordova platform remove android//删除platform文件夹里的android文件夹
+
+构建打包（第一次打包大概需要1个小时才能解决）
+cordova build android//生成android-debug.apk文件
+
+
+
+day 12 15
+-.
+另一种打包apk
+首先先在github上传项目
+然后按照步骤开始打包
+https://build.phonegap.com
+github账号
+myword123
+Ws18317894398
+
+微信平台账号
+1157531996@qq.com
+Ws18317894398
+
+微信小程序账号
+18317894398@139.com
+Ws18317894398
+
+
+
+二.
+类似于bootstrap的框架，方便我们应用
+1.hbuilder自带的dcloud
+   （1）h5+
+   （2）mui
+2.APICloud
+   网站：http://www.apicloud.com/
+    
+
+day 12 16
+
+申请百度开放云账号；
+产品服务的引擎BAE,提供服务器
+还有申请微信公众号
+
+
+hbuilder里面有发行，发行为原生安装包，可以把项目打包
+点击你建立的项目中的mainifest.json里面有各种配置
+应用信息：最好只改版本号和页面入口
+启动图片配置：
+
+
+
+git的一些命令
+1.git init 添加git类库
+2.git add.添加所有的文档
+3commit
+
+
+
+day 12 17
+https://ke.qq.com/course/174586?from=qqchat&ADUIN=44259346&ADSESSION=1481765459&ADTAG=CLIENT.QQ.5497_1..0&ADPUBNO=26621
+
+
+
+微信开发
+sample.php
+
+
+
+1.
+
+
+
+
+
+day 12 19
+
+
+spa是什么
+路由是单页面，通过任何可以做任何操作一个都可以怎么样
+
+
+angular的优势（是js的一类框架）
+1.依赖注入
+2.双向数据绑定
+3.测试
+4.控制
+5.指令，过滤器等
+js中NaN==NaN为false
+angular中{{NaN==NaN}}为true
+
+入门案例
+(1)在需要的地方添加指令ng-app
+
+
+
+
+controller:是相当于数据和module中转站，将数据和modul结合起来
+
+1.双向数据绑定
+mvvm的思想
+指令：ng-model(这个代表的是数据,代表的是绑定数据模型，将input里面的数据源绑定起来，当数据源发生变化驱动了视图发生了变化)    适用的标签范围：input，select,textarea
+在此需要注意一个问题：操作模式是异步的，而不是同步的
+异步和同步的意思：一条一条执行的是同步，可以同时进行的是异步，就像是接电话和发短信
+webworker
+
+2.ng-repeat指令
+
+
+
+
+
+
+
